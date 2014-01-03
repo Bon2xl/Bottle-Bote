@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-dark.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Bottle Bote</title>
+    </head>
+    <body>
+        <div class="app">
+            <div class="homepage">
+                <div class="topcoat-navigation-bar">
+                    <div class="topcoat-navigation-bar__item center full">
+                        <h1 class="topcoat-navigation-bar__title">Bottle Bote</h1>
+                    </div>
+                </div>
+                <div class="container">
+                    <div id="aluminum" class="row">
+                        <span class="lblBtl">Aluminum Cans</span>
+                        <input id="aluminumInput" class="inputNumber topcoat-text-input" type="number" name="aluminum" value="">
+                        <span id="aluminumInviVal" class="itemTotal"></span>
+                    </div>
+                    <div id="beers" class="row">
+                        <span class="lblBtl">Beers</span>
+                        <input id="beerInput" class="inputNumber topcoat-text-input" type="number" name="beers">
+                        <span id="beerInviVal" class="itemTotal"></span>
+                    </div>
+                    <div id="plasticBtl" class="row">
+                        <span class="lblBtl">Plastic Bottle</span>
+                        <input id="plasticBtlInput" class="inputNumber topcoat-text-input" type="number" name="plasticBottle">
+                        <span id="plasticBtlInviVal" class="itemTotal"></span>
+                    </div>
+                    <div id="jugsCont" class="row">
+                        <span class="lblBtl">Milk and Jug Container</span>
+                        <input id="jugsContInput" class="inputNumber topcoat-text-input" type="number" name="jugCont">
+                        <span id="jugsContInviVal" class="itemTotal"></span>
+                    </div>
+                    <div id="glassBtl" class="row">
+                        <span class="lblBtl">Wine or Glass Bottle</span>
+                        <input id="glassBtlInput" class="inputNumber topcoat-text-input" type="number" name="glassBtl">
+                        <span id="glassBtlInviVal" class="itemTotal"></span>
+                    </div>
+                    <div id="total">
+                        <span class="lbl">Total $</span>
+                        <span class="totalAmount">0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/lib/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/saturn.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            window.onload = function(){ 
+                saturn.initialize();
+            };
+
+            app.initialize(); //phonegap initializer
+        </script>
+    </body>
+</html>

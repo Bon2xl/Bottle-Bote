@@ -1,0 +1,38 @@
+.topcoat-navigation-bar{
+	margin-bottom:10px;
+}
+.container{
+	padding:10px;
+}
+h1, #total, .lblBtl{
+	color:white;
+}
+.row{
+	margin-bottom:10px;
+	display: block;
+	overflow: hidden;
+}
+.lblBtl{
+	margin-bottom:4px;
+	display:block;
+}
+input{
+	width: 60%;
+}
+.itemTotal{
+	color:white;
+	position:relative;
+	padding-left:20px;
+	top:17px;
+	width: 81px;
+	display: inline;
+	float: left;
+	overflow: hidden;
+}
+
+
+#total{
+	background:url("../img/1388767835_Money.png") no-repeat top left;
+	height: 31px;
+	padding:13px 0 0 52px
+}
